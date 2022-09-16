@@ -3,7 +3,7 @@ import esphome.config_validation as cv
 from esphome.components import climate, sensor, time
 from esphome.components.remote_base import CONF_TRANSMITTER_ID
 from esphome.const import CONF_ID, CONF_TIME_ID, CONF_MAC_ADDRESS, \
-    UNIT_PERCENT, ICON_PERCENT
+    UNIT_PERCENT, ICON_PERCENT, STATE_CLASS_MEASUREMENT
 
 DEPENDENCIES = ['esp32']
 CONFLICTS_WITH = ['eq3_v1', 'esp32_ble_tracker']
