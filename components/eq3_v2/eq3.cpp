@@ -183,7 +183,7 @@ void EQ3Climate::parse_state(const std::string &data) {
   if (data.size() != sizeof(DeviceStateReturn)) {
     ESP_LOGW(TAG, "State parse of %10llx failed: %s.",
       address,
-      hexencode((const uint8_t*)data.c_str(), data.size()).c_str());
+      format_hex_pretty((const uint8_t*)data.c_str(), data.size()).c_str());
     return;
   }
 
